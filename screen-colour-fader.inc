@@ -39,7 +39,7 @@ forward public OnScreenColourFadeComplete(playerid);
 static stock _SetPlayerScreenColour(playerid, colour) {
     ScreenColour[playerid] = colour;
 
-    TextDrawBoxColor(ScreenColourTD, ScreenColour[playerid]);
+    TextDrawBoxColour(ScreenColourTD, ScreenColour[playerid]);
     TextDrawShowForPlayer(playerid, ScreenColourTD);
 }
 
